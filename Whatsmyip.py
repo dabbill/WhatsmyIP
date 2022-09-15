@@ -4,6 +4,7 @@
 # Date:     2018-09-17
 # Updated:  2019-12-16
 # Purpose:  Check for external IP change, if changed, update route53 and send email
+# Cron Example "*/5 * * * * python3 /path/to/Whatsmyip.py mailgun_password AWS_profile"
 
 import smtplib, os, sys, argparse, urllib.request, sqlite3, logging, logging.handlers
 import modules.vars as vars
